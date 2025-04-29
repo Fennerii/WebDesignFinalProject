@@ -31,6 +31,11 @@ section{
     width: 100%;
     margin: 20px 0;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 
 .imagesection img {
     width: 100%;
@@ -155,16 +160,20 @@ main.container img {
 
 nav ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    list-style-type: none;
   }
   
-  @media (max-width: 1000px) {
+  
+  @media (max-width: 768px) {
     nav ul {
       flex-direction: column;
-      align-items: start;
-      gap: 10px;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
     }
   }
+  
   
